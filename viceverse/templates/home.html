@@ -7,16 +7,10 @@
 <body>
 <h1>VICE VERSE</h1>
 
-<form>
-    <textarea name="usertext">
-
-    </textarea>
-    <p>
-        <input type="button" value="reverse">
-    </p>
-    <h3>
-        New post
-    </h3>
+<form action="{% url 'reverse' %}">
+    <textarea name="usertext"></textarea>
+    <br>
+    <input type="submit" value="reverse">
 </form>
 </body>
 </html>
